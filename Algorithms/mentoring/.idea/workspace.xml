@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dfcc6fe1-dbbb-4d06-991b-b6e6f155fb38" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XRN6FuvQAtZ04L10WzQiC82BfS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="co.com.globant.java.mentoring" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dfcc6fe1-dbbb-4d06-991b-b6e6f155fb38" name="Default Changelist" comment="" />
+      <created>1581004769231</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581004769231</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2728" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1581094033205">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2728" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1581094033205" />
+    <state x="336" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1581082977292">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="336" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1581082977292" />
+  </component>
+</project>
