@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dfcc6fe1-dbbb-4d06-991b-b6e6f155fb38" name="Default Changelist" comment="" />
+    <list default="true" id="dfcc6fe1-dbbb-4d06-991b-b6e6f155fb38" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/globant/java/mentoring/AgeUtilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/globant/java/mentoring/BasicAlgorithmExercises1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/globant/java/mentoring/BasicAlgorithmExercises1.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +31,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -59,13 +64,26 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2645" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581345578660">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2645" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1581345578660" />
     <state x="2728" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1581094033205">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2728" y="410" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1581094033205" />
-    <state x="336" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1581082977292">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="2381" y="163" key="SettingsEditor" timestamp="1581345942124">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="336" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1581082977292" />
+    <state x="2381" y="163" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1581345942124" />
+    <state x="2424" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1581346129125">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="336" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1581343390549" />
+    <state x="2424" y="254" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1581346129124" />
+    <state x="2521" y="246" width="700" height="530" key="recent.locations.popup" timestamp="1581345884713">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2521" y="246" width="700" height="530" key="recent.locations.popup/0.0.1280.680/1920.0.1920.1040@1920.0.1920.1040" timestamp="1581345884713" />
   </component>
 </project>

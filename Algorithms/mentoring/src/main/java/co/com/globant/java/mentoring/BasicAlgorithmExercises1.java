@@ -1,5 +1,7 @@
 package co.com.globant.java.mentoring;
-import java.util.*;
+import java.util.Hashtable;
+import java.util.Dictionary;
+import java.lang.StringBuilder;
 
 /**
  * Basic Algorithm Exercises 1:
@@ -32,52 +34,97 @@ public class BasicAlgorithmExercises1{
         for (int actualAge : AGE){
 
             // Get the highest Age.
-            if (actualAge > highestAge){
-                highestAge = actualAge;
-            }
+            highestAge = AgeUtilities.getHigherAge(actualAge, highestAge);
 
             // Get the lowest Age.
-            if (actualAge < lowestAge){
-                lowestAge = actualAge;
-            }
+            lowestAge = AgeUtilities.getLowerAge(actualAge, lowestAge);
 
             //Get the Average Age.
             tempSumAges += actualAge;
 
-            // Get the number of persons under 18.
-            if (actualAge < 18) {
-                personsUnder18 += 1;
-            }
-
-            // Get the number of persons over 18.
-            if (actualAge > 18) {
-                personsOver18 += 1;
+            // Get the number of persons under and over 18.
+            if (AgeUtilities.isOverAgeThreashold(actualAge)) {
+                personsOver18 ++;
+            }else{
+                personsUnder18 ++;
             }
 
             // Get the number of persons with the same age
-
-            if ( personsSameAge.get(actualAge) == null){
-                personsSameAge.put(actualAge,1);
-            }else{
-                int actualPersonCounter = personsSameAge.get(actualAge);
-                sameAgeCounter += 1;
-                personsSameAge.put(actualAge, actualPersonCounter + 1);
-            }
+            sameAgeCounter += sameAgeDiscover(personsSameAge, actualAge);
         }
 
         // Generate the avg
-        avarageAge = tempSumAges/AGE.length;
+        avarageAge = AgeUtilities.getAverage(tempSumAges, AGE.length);
 
-        String response = " -- Results \n" +
-                "* The highest age -> " + highestAge  + "\n" +
-                "* The lowest age -> " + lowestAge + "\n" +
-                "* The Average age -> " + avarageAge + "\n" +
-                "* Persons under 18 -> " + personsUnder18 + "\n" +
-                "* Persons over 18 -> " + personsOver18 + "\n" +
-                "* The same age list -> " + personsSameAge + "\n" +
-                "* The same age Counter -> " +sameAgeCounter;
+        // Generate the string output and printed
+        printResponse(generateResponse(highestAge,lowestAge,avarageAge,personsUnder18,personsOver18,personsSameAge,sameAgeCounter));
+    }
 
+    /**
+     * Display response at console
+     * @param response
+     */
+    public void printResponse(StringBuilder response){
         System.out.println(response);
+    }
+
+    /**
+     * Generate a StringBuilder that has the output message that shows the
+     * variables listed at the firm.
+     * @param highestAge        Int
+     * @param lowestAge         Int
+     * @param avarageAge        Int
+     * @param personsUnder18    Int
+     * @param personsOver18     Int
+     * @param personsSameAge    Dictionary
+     * @param sameAgeCounter    Int
+     * @return                  StringBuilder Response
+     */
+    public StringBuilder generateResponse(int highestAge,int lowestAge,int avarageAge,int personsUnder18,int personsOver18,Dictionary personsSameAge,int sameAgeCounter){
+        StringBuilder response = new StringBuilder("-- Results");
+        response.append("\n* The highest age -> ");
+        response.append(highestAge);
+
+        response.append("\n* The lowest age -> ");
+        response.append(lowestAge);
+
+        response.append("\n* The Average age -> ");
+        response.append(avarageAge);
+
+        response.append("\n* Persons under 18 -> ");
+        response.append(personsUnder18);
+
+        response.append("\n* Persons over 18 -> ");
+        response.append(personsOver18);
+
+        response.append("\n* The same age list -> ");
+        response.append(personsSameAge);
+
+        response.append("\n* The same age Counter -> ");
+        response.append(sameAgeCounter);
+
+        return response;
+
+    }
+
+    /**
+     *
+     * @param ageDictionary     -> Java Dictionary Object that store <Age, AgeCounter>
+     * @param age               -> Age to compare with previus ages.
+     * @return                  -> 0 if it is the only age, 1 if there is another same age at the dictonary
+     */
+    public int sameAgeDiscover(Dictionary ageDictionary, int age){
+
+        if ( ageDictionary.get(age) == null){
+            ageDictionary.put(age,1);
+
+            return 0;
+        }else{
+            int actualPersonCounter = ((Integer) ageDictionary.get(age)).intValue();
+            ageDictionary.put(age, actualPersonCounter + 1);
+
+            return 1;
+        }
     }
 
 }
