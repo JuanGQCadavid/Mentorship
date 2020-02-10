@@ -80,4 +80,8 @@ public class BasicAlgorithmExercises1{
         System.out.println(response);
     }
 
+    public static void main(String[] args) {
+        
+    }
+
 }
