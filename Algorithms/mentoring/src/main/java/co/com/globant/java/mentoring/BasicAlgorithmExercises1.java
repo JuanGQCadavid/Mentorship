@@ -19,6 +19,7 @@ public class BasicAlgorithmExercises1{
 
     final int[] AGE = {87,6,17,37,11,89,34,26,25,21,21,37,55,33,81,6};
 
+
     public void loopSolution(){
         // Variables Definition
         int highestAge = 0, lowestAge = 0, avarageAge = 0, personsUnder18 = 0, personsOver18 = 0, sameAgeCounter = 0;
