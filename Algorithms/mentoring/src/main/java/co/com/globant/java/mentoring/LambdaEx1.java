@@ -22,32 +22,43 @@ public class LambdaEx1 {
     public LambdaEx1(){
         ageList = Arrays.asList(AGE);
     }
-    public int highestAge(){
+
+    public void highestAge(){
         Integer highest = ageList.stream().max(Integer::compare).get();
-        return highest;
+        System.out.println("Highest -> " + highest);
     }
-    public int lowestAge(){
-        return ageList.stream().min(Integer::compare).get();
+    public void lowestAge(){
+        int response =  ageList.stream().min(Integer::compare).get();
+        System.out.println("Lowest -> " + response);
+    }
+    public void avgAge(){
+        int response =  ageList.stream().reduce(Integer::sum).map(x -> x/ageList.size()).get();
+        System.out.println("Avg -> " +response);
+    }
+    public void underThreshold(){
+        long response = ageList.stream().filter( age -> age < AGE_THRESHOLD ).count();
+        System.out.println("Under Threshold -> " + response);
+    }
+    public void  overThreshold(){
+        long response = ageList.stream().filter( age -> age > AGE_THRESHOLD ).count();
+        System.out.println("Over Threshold -> " + response);
     }
 
-    public int avgAge(){
-        return ageList.stream().reduce(Integer::sum).map(x -> x/ageList.size()).get();
-    }
-    public long underThreashold(){
-        return ageList.stream().filter( age -> age < AGE_THRESHOLD ).count();
-    }
-    public long overThreashold(){
-        return ageList.stream().filter( age -> age > AGE_THRESHOLD ).count();
-    }
     /*
     public int sameAge(){
         return ageList.stream().flatMap( i -> ageList.stream().filter(j -> j.equals(i)).count());
     }
      */
 
+
     public static void main(String[] args) {
-        LambdaEx1 objResponse = new LambdaEx1();
-        System.out.println("Output ->  " +  objResponse.overThreashold());
+        LambdaEx1 lm1 = new LambdaEx1();
+        lm1.avgAge();
+        lm1.highestAge();
+        lm1.lowestAge();
+        lm1.underThreshold();
+        lm1.overThreshold();
+
     }
 
 

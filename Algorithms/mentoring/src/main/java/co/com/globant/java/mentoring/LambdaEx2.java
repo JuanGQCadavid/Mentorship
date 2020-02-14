@@ -22,18 +22,6 @@ public class LambdaEx2 {
     public  LambdaEx2(){
     }
 
-    public void highestTemp2(){
-    /*    long z = grpupAge.stream().map( subList -> {Integer a = Arrays.asList(subList).stream().map(x -> (Integer) x).max(Integer::compare).get();
-            System.out.println(a);
-            return a;}).count();
-        return z; */
-    }
-
-    public void tempHighest(){
-        //grpupAge.forEach( subList -> {Integer a = Arrays.asList(subList).stream().map(x -> (Integer) x).max(Integer::compare).get();
-            //System.out.println(a);});
-    }
-
     public void highestPerGroup(){
         List <Integer>  response = Arrays.stream(GROUP_AGE)
                 .map(subList -> Arrays.stream(subList).max())
