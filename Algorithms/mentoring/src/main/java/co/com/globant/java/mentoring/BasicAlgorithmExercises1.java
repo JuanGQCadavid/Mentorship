@@ -3,6 +3,7 @@ import java.util.Hashtable;
 import java.util.Dictionary;
 import java.lang.StringBuilder;
 
+
 /**
  * Basic Algorithm Exercises 1:
  * Description: Given the following array, solve the following process.
@@ -18,7 +19,6 @@ public class BasicAlgorithmExercises1{
 
 
     final int[] AGE = {87,6,17,37,11,89,34,26,25,21,21,37,55,33,81,6};
-
 
     public void loopSolution(){
         // Variables Definition
