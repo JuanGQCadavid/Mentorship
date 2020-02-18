@@ -2,24 +2,24 @@ package co.com.globant.java.mentoring;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class LambdaEx1 {
-    /**
-     * Basic Algorithm Exercises 1:
-     * Description: Given the following array, solve the following process.
-     * Get the highest Age.                         D
-     * Get the lowest Age.                          D
-     * Get the Average Age.                         D
-     * Get the number of persons under 18.          D
-     * Get the number of persons over 18.           D
-     * Get the number of persons of the same age.
-     * Every process must print the expected result on the console.*
-     */
+/**
+ * Basic Algorithm Exercises 1:
+ * Description: Given the following array, solve the following process.
+ * Get the highest Age.                         D
+ * Get the lowest Age.                          D
+ * Get the Average Age.                         D
+ * Get the number of persons under 18.          D
+ * Get the number of persons over 18.           D
+ * Get the number of persons of the same age.
+ * Every process must print the expected result on the console.*
+ */
+public class BasicAlgorithmExercises1 {
 
     final Integer [] AGE = {87,6,17,37,11,89,34,26,25,21,21,37,55,33,81,6};
     final static int AGE_THRESHOLD = 18;
     List<Integer> ageList;
 
-    public LambdaEx1(){
+    public BasicAlgorithmExercises1(){
         ageList = Arrays.asList(AGE);
     }
 
@@ -32,7 +32,7 @@ public class LambdaEx1 {
         System.out.println("Lowest -> " + response);
     }
     public void avgAge(){
-        int response =  ageList.stream().reduce(Integer::sum).map(x -> x/ageList.size()).get();
+        int response =  ageList.stream().reduce(Integer::sum).get()/ageList.size();
         System.out.println("Avg -> " +response);
     }
     public void underThreshold(){
@@ -52,7 +52,7 @@ public class LambdaEx1 {
 
 
     public static void main(String[] args) {
-        LambdaEx1 lm1 = new LambdaEx1();
+        BasicAlgorithmExercises1 lm1 = new BasicAlgorithmExercises1();
         lm1.avgAge();
         lm1.highestAge();
         lm1.lowestAge();
