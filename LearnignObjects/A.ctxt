@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=A
+comment0.text=\r\n\ Abstract\ class\ A\ -\ write\ a\ description\ of\ the\ class\ here\r\n\r\n\ @author\ (your\ name\ here)\r\n\ @version\ (version\ number\ or\ date\ here)\r\n
+comment1.params=
+comment1.target=A()
+comment2.params=i
+comment2.target=A(int)
+comment3.params=
+comment3.target=void\ xyz()
+comment4.params=a\ b
+comment4.target=int\ abc(int,\ int)
+numComments=5
